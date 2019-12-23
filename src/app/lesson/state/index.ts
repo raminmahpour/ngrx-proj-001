@@ -8,18 +8,23 @@ import { LessonState } from './lesson.reducer';
 
 
 // Selector functions
-const getLesspnState = createFeatureSelector<LessonState>('lessons');
+const getLessonState = createFeatureSelector<LessonState>('lessons');
 
 export const getId = createSelector(
-  getLesspnState,
+  getLessonState,
   state => state.id
 );
 
 export const getTitle = createSelector(
-  getLesspnState,
+  getLessonState,
   state => state.title
 );
+export const getLessons = createSelector(
+  getLessonState,
+  state => state.lessons
+);
+
 // export const getLessons = createSelector(
-//   getLesspnState,
+//   getLessonState,
 //   state => state
 // );
