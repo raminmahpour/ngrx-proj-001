@@ -10,10 +10,10 @@ import { LessonState } from './lesson.reducer';
 // Selector functions
 const getLessonState = createFeatureSelector<LessonState>('lessons');
 
-export const getId = createSelector(
-  getLessonState,
-  state => state.id
-);
+// export const getId = createSelector(
+//   getLessonState,
+//   state => state.id
+// );
 
 export const getTitle = createSelector(
   getLessonState,
