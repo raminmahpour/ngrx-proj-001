@@ -23,8 +23,8 @@ export class LessonComponent implements OnInit, OnDestroy {
 
   //
   lesson: Lesson[];
-  lesson$: Observable<Lesson[]>;
-  lessons$: Observable<string>;
+  // lesson$: Observable<Lesson[]>;
+  lessons$: Observable<Lesson[]>;
   maskTitle: string;
 
   constructor(private store: Store<fromRoot.State>,
@@ -36,7 +36,7 @@ export class LessonComponent implements OnInit, OnDestroy {
 
 debugger;
     this.store.dispatch(new lessonActions.Load());
-    this.lessons$ = this.store.pipe(select(fromLesson.getTitle));
+    this.lessons$ = this.store.pipe(select(fromLesson.getLessons));
     // Observable
   //  this.lesson$ = this.lessonService.getProducts();
 

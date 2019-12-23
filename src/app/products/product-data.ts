@@ -47,27 +47,27 @@ export class ProductData implements InMemoryDbService {
         const lessons: Lesson[] = [
             {
                 'id': 1,
-                'title': 'Leaf Rake',
+                'title': 'Mind',
 
             },
             {
                 'id': 2,
-                'title': 'Garden Cart',
+                'title': 'Science',
 
             },
             {
                 'id': 5,
-                'title': 'Hammer',
+                'title': 'Computer',
 
             },
             {
                 'id': 8,
-                'title': 'Saw',
+                'title': 'Telecommuncation',
 
             },
             {
                 'id': 10,
-                'title': 'Video Game Controller',
+                'title': 'Mechanic',
 
             }
         ];
