@@ -16,14 +16,15 @@
       </button>
     </div>
   </div>
-
+  <!-- 111{{ok.value | async}} -->
   <div class="card-footer">
     <div class="row">
       <div class="form-check col-md-7">
         <label>
+         
           <input class="form-check-input"
                  type="checkbox"
-                 (change)="checkChanged($event.target.checked)"
+                 (change)="this.checked.emit($event.target.checked)"
                  [checked]="displayCode">
           Display Product Code
         </label>
