@@ -1,0 +1,37 @@
+import { InMemoryDbService } from 'angular-in-memory-web-api';
+
+import { Lesson } from './lesson';
+
+export class LessonData implements InMemoryDbService {
+//
+    createDb() {
+        const lessons: Lesson[] = [
+            {
+                'id': 1,
+                'title': 'Leaf Rake',
+
+            },
+            {
+                'id': 2,
+                'title': 'Garden Cart',
+
+            },
+            {
+                'id': 5,
+                'title': 'Hammer',
+
+            },
+            {
+                'id': 8,
+                'title': 'Saw',
+
+            },
+            {
+                'id': 10,
+                'title': 'Video Game Controller',
+
+            }
+        ];
+        return { lessons };
+    }
+}
