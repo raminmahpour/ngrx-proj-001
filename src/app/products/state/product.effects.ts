@@ -13,7 +13,7 @@ import * as productActions from './product.actions';
 
 @Injectable()
 export class ProductEffects {
-
+//
   constructor(private productService: ProductService,
               private actions$: Actions) { }
 
